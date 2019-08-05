@@ -15,7 +15,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@seriea-nx-example/home": ["libs/home/src/index.ts"],
+      "@seriea-nx-example/standings": ["libs/standings/src/index.ts"],
+      "@seriea-nx-example/teams": ["libs/teams/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -7,5 +7,21 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "seriea": {
+      "tags": []
+    },
+    "seriea-e2e": {
+      "tags": []
+    },
+    "home": {
+      "tags": []
+    },
+    "standings": {
+      "tags": []
+    },
+    "teams": {
+      "tags": []
+    }
+  }
 }
