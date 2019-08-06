@@ -18,7 +18,10 @@
     "paths": {
       "@seriea-nx-example/home": ["libs/home/src/index.ts"],
       "@seriea-nx-example/standings": ["libs/standings/src/index.ts"],
-      "@seriea-nx-example/teams": ["libs/teams/src/index.ts"]
+      "@seriea-nx-example/teams": ["libs/teams/src/index.ts"],
+      "@seriea-nx-example/data": ["libs/data/src/index.ts"],
+      "@seriea-nx-example/team": ["libs/team/src/index.ts"],
+      "@seriea-nx-example/services": ["libs/services/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

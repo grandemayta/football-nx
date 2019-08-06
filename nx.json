@@ -22,6 +22,15 @@
     },
     "teams": {
       "tags": []
+    },
+    "data": {
+      "tags": []
+    },
+    "team": {
+      "tags": []
+    },
+    "services": {
+      "tags": []
     }
   }
 }

@@ -1,25 +1,17 @@
-import React from 'react';
-import './app.scss';
-
-import { Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Home } from '@seriea-nx-example/home';
 import { Standings } from '@seriea-nx-example/standings';
 import { Teams } from '@seriea-nx-example/teams';
-
-
+import './app.scss';
 
 export const App = () => {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./${fileName}.${style} file.
-   */
   return (
-    <>
-      <Route path="/" exact render={Home} />
-      <Route path="/standings" render={Standings} />
-      <Route path="/teams" render={Teams} />
-    </>
+    <Router>
+        <Route path="/" exact component={Home} />
+        <Route path="/standings" component={Standings} />
+        <Route path="/teams" component={Teams} />
+    </Router>
   );
 };
 

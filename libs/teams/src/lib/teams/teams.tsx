@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { getTeams } from '@seriea-nx-example/services';
 import './teams.scss';
 
 export const Teams = () => {
+  const [teams, setTeams] = useState([]); 
+
+  useEffect(() => {
+    getTeams(setTeams);
+  });
+
   return (
     <>
       <h1>Teams</h1>
       <ul>
-        <li>
-          <a>Inter</a>
-        </li>
-        <li>
-          <a>Milan</a>
-        </li>
-        <li>
-          <a>Juventus</a>
-        </li>
+        {teams.map(team => {
+          return (
+            <li key={team.id}>
+              <a>{team.name}</a>
+            </li>
+          )
+        })}
       </ul>
     </>
   );
