@@ -16,12 +16,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@seriea-nx-example/home": ["libs/home/src/index.ts"],
-      "@seriea-nx-example/standings": ["libs/standings/src/index.ts"],
-      "@seriea-nx-example/teams": ["libs/teams/src/index.ts"],
-      "@seriea-nx-example/data": ["libs/data/src/index.ts"],
-      "@seriea-nx-example/team": ["libs/team/src/index.ts"],
-      "@seriea-nx-example/services": ["libs/services/src/index.ts"]
+      "@football-nx/home": ["libs/home/src/index.ts"],
+      "@football-nx/standings": ["libs/standings/src/index.ts"],
+      "@football-nx/teams": ["libs/teams/src/index.ts"],
+      "@football-nx/data": ["libs/data/src/index.ts"],
+      "@football-nx/team": ["libs/team/src/index.ts"],
+      "@football-nx/services": ["libs/services/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

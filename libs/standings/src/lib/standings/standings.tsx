@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getStandings } from '@seriea-nx-example/services';
+import { getStandings } from '@football-nx/services';
 import './standings.scss';
 
 export interface StandingsProps {

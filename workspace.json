@@ -1,9 +1,9 @@
 {
   "version": 1,
   "projects": {
-    "seriea": {
-      "root": "apps/seriea",
-      "sourceRoot": "apps/seriea/src",
+    "serie-a": {
+      "root": "apps/serie-a",
+      "sourceRoot": "apps/serie-a/src",
       "projectType": "application",
       "schematics": {},
       "architect": {
@@ -11,21 +11,21 @@
           "builder": "@nrwl/web:build",
           "options": {
             "differentialLoading": true,
-            "outputPath": "dist/apps/seriea",
-            "index": "apps/seriea/src/index.html",
-            "main": "apps/seriea/src/main.tsx",
-            "polyfills": "apps/seriea/src/polyfills.ts",
-            "tsConfig": "apps/seriea/tsconfig.app.json",
-            "assets": ["apps/seriea/src/favicon.ico", "apps/seriea/src/assets"],
-            "styles": ["apps/seriea/src/styles.scss"],
+            "outputPath": "dist/apps/serie-a",
+            "index": "apps/serie-a/src/index.html",
+            "main": "apps/serie-a/src/main.tsx",
+            "polyfills": "apps/serie-a/src/polyfills.ts",
+            "tsConfig": "apps/serie-a/tsconfig.app.json",
+            "assets": ["apps/serie-a/src/favicon.ico", "apps/serie-a/src/assets"],
+            "styles": ["apps/serie-a/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "apps/seriea/src/environments/environment.ts",
-                  "with": "apps/seriea/src/environments/environment.prod.ts"
+                  "replace": "apps/serie-a/src/environments/environment.ts",
+                  "with": "apps/serie-a/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -48,11 +48,11 @@
         "serve": {
           "builder": "@nrwl/web:dev-server",
           "options": {
-            "buildTarget": "seriea:build"
+            "buildTarget": "serie-a:build"
           },
           "configurations": {
             "production": {
-              "buildTarget": "seriea:build:production"
+              "buildTarget": "serie-a:build:production"
             }
           }
         },
@@ -61,36 +61,36 @@
           "options": {
             "linter": "tslint",
             "tsConfig": [
-              "apps/seriea/tsconfig.app.json",
-              "apps/seriea/tsconfig.spec.json"
+              "apps/serie-a/tsconfig.app.json",
+              "apps/serie-a/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/seriea/**"]
+            "exclude": ["**/node_modules/**", "!apps/serie-a/**"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "apps/seriea/jest.config.js",
-            "tsConfig": "apps/seriea/tsconfig.spec.json"
+            "jestConfig": "apps/serie-a/jest.config.js",
+            "tsConfig": "apps/serie-a/tsconfig.spec.json"
           }
         }
       }
     },
-    "seriea-e2e": {
-      "root": "apps/seriea-e2e",
-      "sourceRoot": "apps/seriea-e2e/src",
+    "serie-a-e2e": {
+      "root": "apps/serie-a-e2e",
+      "sourceRoot": "apps/serie-a-e2e/src",
       "projectType": "application",
       "architect": {
         "e2e": {
           "builder": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/seriea-e2e/cypress.json",
-            "tsConfig": "apps/seriea-e2e/tsconfig.e2e.json",
-            "devServerTarget": "seriea:serve"
+            "cypressConfig": "apps/serie-a-e2e/cypress.json",
+            "tsConfig": "apps/serie-a-e2e/tsconfig.e2e.json",
+            "devServerTarget": "serie-a:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "seriea:serve:production"
+              "devServerTarget": "serie-a:serve:production"
             }
           }
         },
@@ -98,8 +98,8 @@
           "builder": "@nrwl/linter:lint",
           "options": {
             "linter": "tslint",
-            "tsConfig": ["apps/seriea-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/seriea-e2e/**"]
+            "tsConfig": ["apps/serie-a-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/serie-a-e2e/**"]
           }
         }
       }
@@ -260,9 +260,9 @@
         }
       }
     },
-    "premiereleague": {
-      "root": "apps/premiereleague",
-      "sourceRoot": "apps/premiereleague/src",
+    "premier-league": {
+      "root": "apps/premier-league",
+      "sourceRoot": "apps/premier-league/src",
       "projectType": "application",
       "schematics": {},
       "architect": {
@@ -270,16 +270,16 @@
           "builder": "@nrwl/web:build",
           "options": {
             "differentialLoading": false,
-            "outputPath": "dist/apps/premiereleague",
-            "index": "apps/premiereleague/src/index.html",
-            "main": "apps/premiereleague/src/main.tsx",
-            "polyfills": "apps/premiereleague/src/polyfills.ts",
-            "tsConfig": "apps/premiereleague/tsconfig.app.json",
+            "outputPath": "dist/apps/premier-league",
+            "index": "apps/premier-league/src/index.html",
+            "main": "apps/premier-league/src/main.tsx",
+            "polyfills": "apps/premier-league/src/polyfills.ts",
+            "tsConfig": "apps/premier-league/tsconfig.app.json",
             "assets": [
-              "apps/premiereleague/src/favicon.ico",
-              "apps/premiereleague/src/assets"
+              "apps/premier-league/src/favicon.ico",
+              "apps/premier-league/src/assets"
             ],
-            "styles": ["apps/premiereleague/src/styles.scss"],
+            "styles": ["apps/premier-league/src/styles.scss"],
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/babel"
           },
@@ -287,8 +287,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "apps/premiereleague/src/environments/environment.ts",
-                  "with": "apps/premiereleague/src/environments/environment.prod.ts"
+                  "replace": "apps/premier-league/src/environments/environment.ts",
+                  "with": "apps/premier-league/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -311,11 +311,11 @@
         "serve": {
           "builder": "@nrwl/web:dev-server",
           "options": {
-            "buildTarget": "premiereleague:build"
+            "buildTarget": "premier-league:build"
           },
           "configurations": {
             "production": {
-              "buildTarget": "premiereleague:build:production"
+              "buildTarget": "premier-league:build:production"
             }
           }
         },
@@ -324,36 +324,36 @@
           "options": {
             "linter": "tslint",
             "tsConfig": [
-              "apps/premiereleague/tsconfig.app.json",
-              "apps/premiereleague/tsconfig.spec.json"
+              "apps/premier-league/tsconfig.app.json",
+              "apps/premier-league/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/premiereleague/**"]
+            "exclude": ["**/node_modules/**", "!apps/premier-league/**"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "apps/premiereleague/jest.config.js",
-            "tsConfig": "apps/premiereleague/tsconfig.spec.json"
+            "jestConfig": "apps/premier-league/jest.config.js",
+            "tsConfig": "apps/premier-league/tsconfig.spec.json"
           }
         }
       }
     },
-    "premiereleague-e2e": {
-      "root": "apps/premiereleague-e2e",
-      "sourceRoot": "apps/premiereleague-e2e/src",
+    "premier-league-e2e": {
+      "root": "apps/premier-league-e2e",
+      "sourceRoot": "apps/premier-league-e2e/src",
       "projectType": "application",
       "architect": {
         "e2e": {
           "builder": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/premiereleague-e2e/cypress.json",
-            "tsConfig": "apps/premiereleague-e2e/tsconfig.e2e.json",
-            "devServerTarget": "premiereleague:serve"
+            "cypressConfig": "apps/premier-league-e2e/cypress.json",
+            "tsConfig": "apps/premier-league-e2e/tsconfig.e2e.json",
+            "devServerTarget": "premier-league:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "premiereleague:serve:production"
+              "devServerTarget": "premier-league:serve:production"
             }
           }
         },
@@ -361,8 +361,8 @@
           "builder": "@nrwl/linter:lint",
           "options": {
             "linter": "tslint",
-            "tsConfig": ["apps/premiereleague-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/premiereleague-e2e/**"]
+            "tsConfig": ["apps/premier-league-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/premier-league-e2e/**"]
           }
         }
       }
@@ -376,5 +376,5 @@
       "babel": true
     }
   },
-  "defaultProject": "seriea"
+  "defaultProject": "serie-a"
 }

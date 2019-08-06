@@ -1,5 +1,5 @@
 {
-  "npmScope": "seriea-nx-example",
+  "npmScope": "football-nx",
   "implicitDependencies": {
     "workspace.json": "*",
     "package.json": "*",
@@ -8,10 +8,10 @@
     "nx.json": "*"
   },
   "projects": {
-    "seriea": {
+    "serie-a": {
       "tags": []
     },
-    "seriea-e2e": {
+    "serie-a-e2e": {
       "tags": []
     },
     "home": {
@@ -32,10 +32,10 @@
     "services": {
       "tags": []
     },
-    "premiereleague": {
+    "premier-league": {
       "tags": []
     },
-    "premiereleague-e2e": {
+    "premier-league-e2e": {
       "tags": []
     }
   }

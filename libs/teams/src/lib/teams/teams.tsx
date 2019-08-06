@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getTeams } from '@seriea-nx-example/services';
+import { getTeams } from '@football-nx/services';
 import './teams.scss';
 
 export interface TeamProps {
@@ -11,7 +11,7 @@ export const Teams = (props: TeamProps) => {
 
   useEffect(() => {
     getTeams(props.competition, setTeams);
-  });
+  }, []);
 
   return (
     <>

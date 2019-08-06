@@ -1,7 +1,11 @@
 {
-  "name": "seriea-nx-example",
+  "name": "football-nx",
   "version": "0.0.0",
-  "license": "MIT",
+  "description": "Monorepo workspace created with NX",
+  "author": {
+    "name": "Gabriel Mayta",
+    "email": "grandemayta@gmail.com"
+  },
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
@@ -24,7 +28,6 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help"
   },
-  "private": true,
   "dependencies": {
     "document-register-element": "1.13.1",
     "react": "16.8.6",
@@ -59,5 +62,6 @@
     "babel-plugin-macros": "2.6.1",
     "core-js": "3.1.4",
     "regenerator-runtime": "0.13.3"
-  }
+  },
+  "license": "MIT"
 }

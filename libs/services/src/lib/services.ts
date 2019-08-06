@@ -1,4 +1,4 @@
-import { BASEURL, HEADERS } from '@seriea-nx-example/data';
+import { BASEURL, HEADERS } from '@football-nx/data';
 
 const httpWrapper = endpoint => {
     return fetch(`${BASEURL}/${endpoint}`, { headers: HEADERS });
