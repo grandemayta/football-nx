@@ -49,6 +49,15 @@
     "@nrwl/web": "8.4.3",
     "@types/react": "16.8.23",
     "@types/react-dom": "16.8.5",
-    "@testing-library/react": "8.0.5"
+    "@testing-library/react": "8.0.5",
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
+    "@babel/preset-typescript": "7.3.3",
+    "@babel/plugin-proposal-decorators": "7.4.4",
+    "babel-loader": "8.0.6",
+    "babel-plugin-macros": "2.6.1",
+    "core-js": "3.1.4",
+    "regenerator-runtime": "0.13.3"
   }
 }

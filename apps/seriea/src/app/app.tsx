@@ -9,8 +9,8 @@ export const App = () => {
   return (
     <Router>
         <Route path="/" exact component={Home} />
-        <Route path="/standings" component={Standings} />
-        <Route path="/teams" component={Teams} />
+        <Route path="/standings" render={() => <Standings competition="SA" season="2018" />} />
+        <Route path="/teams" render={() => <Teams competition="SA" />} />
     </Router>
   );
 };

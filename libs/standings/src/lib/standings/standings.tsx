@@ -2,12 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { getStandings } from '@seriea-nx-example/services';
 import './standings.scss';
 
+export interface StandingsProps {
+  competition: string,
+  season: string
+}
 
-export const Standings = () => {
+export const Standings = (props: StandingsProps) => {
   const [standings, setStandings] = useState([]);
 
   useEffect(() => {
-    getStandings(2018, setStandings);
+    getStandings(props.competition, props.season, setStandings);
   }, []);
 
   return (

@@ -4,14 +4,14 @@ const httpWrapper = endpoint => {
     return fetch(`${BASEURL}/${endpoint}`, { headers: HEADERS });
 };
 
-export const getStandings = async (season, setState) => {
-    const response = await httpWrapper(`competitions/SA/standings?season=${season}`);
+export const getStandings = async (competition, season, setState) => {
+    const response = await httpWrapper(`competitions/${competition}/standings?season=${season}`);
     const data = await response.json();
     setState(data.standings[0].table);
 };
 
-export const getTeams = async (setState) => {
-    const response = await httpWrapper('competitions/SA/teams');
+export const getTeams = async (competition, setState) => {
+    const response = await httpWrapper(`competitions/${competition}/teams`);
     const data = await response.json();
     setState(data.teams);
 };
