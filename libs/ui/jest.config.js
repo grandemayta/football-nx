@@ -1,9 +1,9 @@
 module.exports = {
-  name: 'teams',
+  name: 'ui',
   preset: '../../jest.config.js',
   transform: {
     '^.+\\.[tj]sx?$': 'ts-jest'
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'html'],
-  coverageDirectory: '../../coverage/libs/teams'
+  coverageDirectory: '../../coverage/libs/ui'
 };

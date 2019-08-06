@@ -16,12 +16,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@football-nx/home": ["libs/home/src/index.ts"],
-      "@football-nx/standings": ["libs/standings/src/index.ts"],
-      "@football-nx/teams": ["libs/teams/src/index.ts"],
       "@football-nx/data": ["libs/data/src/index.ts"],
-      "@football-nx/team": ["libs/team/src/index.ts"],
-      "@football-nx/services": ["libs/services/src/index.ts"]
+      "@football-nx/services": ["libs/services/src/index.ts"],
+      "@football-nx/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

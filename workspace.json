@@ -16,7 +16,10 @@
             "main": "apps/serie-a/src/main.tsx",
             "polyfills": "apps/serie-a/src/polyfills.ts",
             "tsConfig": "apps/serie-a/tsconfig.app.json",
-            "assets": ["apps/serie-a/src/favicon.ico", "apps/serie-a/src/assets"],
+            "assets": [
+              "apps/serie-a/src/favicon.ico",
+              "apps/serie-a/src/assets"
+            ],
             "styles": ["apps/serie-a/src/styles.scss"],
             "scripts": []
           },
@@ -126,58 +129,6 @@
           "options": {
             "jestConfig": "libs/home/jest.config.js",
             "tsConfig": "libs/home/tsconfig.spec.json"
-          }
-        }
-      }
-    },
-    "standings": {
-      "root": "libs/standings",
-      "sourceRoot": "libs/standings/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@nrwl/linter:lint",
-          "options": {
-            "linter": "tslint",
-            "tsConfig": [
-              "libs/standings/tsconfig.lib.json",
-              "libs/standings/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/standings/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/standings/jest.config.js",
-            "tsConfig": "libs/standings/tsconfig.spec.json"
-          }
-        }
-      }
-    },
-    "teams": {
-      "root": "libs/teams",
-      "sourceRoot": "libs/teams/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@nrwl/linter:lint",
-          "options": {
-            "linter": "tslint",
-            "tsConfig": [
-              "libs/teams/tsconfig.lib.json",
-              "libs/teams/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/teams/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/teams/jest.config.js",
-            "tsConfig": "libs/teams/tsconfig.spec.json"
           }
         }
       }
@@ -363,6 +314,32 @@
             "linter": "tslint",
             "tsConfig": ["apps/premier-league-e2e/tsconfig.e2e.json"],
             "exclude": ["**/node_modules/**", "!apps/premier-league-e2e/**"]
+          }
+        }
+      }
+    },
+    "ui": {
+      "root": "libs/ui",
+      "sourceRoot": "libs/ui/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "tslint",
+            "tsConfig": [
+              "libs/ui/tsconfig.lib.json",
+              "libs/ui/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/ui/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/jest.config.js",
+            "tsConfig": "libs/ui/tsconfig.spec.json"
           }
         }
       }

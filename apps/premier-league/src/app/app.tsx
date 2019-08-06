@@ -1,6 +1,5 @@
 import React from 'react';
-import { Standings } from '@football-nx/standings';
-import { Teams } from '@football-nx/teams';
+import { Standings, Teams  } from '@football-nx/ui';
 
 import './app.scss';
 

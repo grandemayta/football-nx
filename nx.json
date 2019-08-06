@@ -37,6 +37,9 @@
     },
     "premier-league-e2e": {
       "tags": []
+    },
+    "ui": {
+      "tags": []
     }
   }
 }
